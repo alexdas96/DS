@@ -9,15 +9,15 @@ int main()
     loop_main:
     printf("Please specify the desired method:\n");
     printf("1.Encryption[E]    2.Decryption[D]\n\n");
-    scanf("%c", &option);
+    scanf(" %c", &option);
 
     if((option=='1')||(option=='E')||(option=='e'))
     {
         printf("\nYou have chosen the encryption method.\n");
         printf("Please enter a plain text to encrypt: ");
-        scanf("%s", text);
+        scanf(" %s", text);
         printf("\nPlease enter an encryption key: ");
-        scanf("%d", &key);
+        scanf(" %d", &key);
 
         for(i = 0; text[i] != '\0'; ++i)
         {
@@ -73,9 +73,9 @@ int main()
     {
         printf("\nYou have chosen the decryption method.\n");
         printf("Please enter a cipher text to decrypt: ");
-        scanf("%s", text);
+        scanf(" %s", text);
         printf("\nPlease enter a decryption key: ");
-        scanf("%d", &key);;
+        scanf(" %d", &key);;
 
         for(i = 0; text[i] != '\0'; ++i)
         {
